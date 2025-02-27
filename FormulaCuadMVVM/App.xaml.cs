@@ -1,4 +1,6 @@
-﻿namespace FormulaCuadMVVM
+﻿using FormulaCuadMVVM.Views;
+
+namespace FormulaCuadMVVM
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new FormulaCuadView();
         }
     }
 }

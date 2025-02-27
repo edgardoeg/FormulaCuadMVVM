@@ -2,11 +2,24 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormulaCuadMVVM.Views.FormulaCuadView"
+             xmlns:ViewModel="clr-namespace:FormulaCuadMVVM.ViewModels"
+             x:DataType="ViewModel:FormulaCuadViewModel"
              Title="FormulaCuadView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="5">
+            <Label Text="Ingrese valor de a: "/>
+            <Entry Text="" Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese valor de b: "/>
+            <Entry Text="" Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese valor de c: "/>
+            <Entry Text="" Keyboard="Numeric"/>
+
+            <Button Text="Calcular" Background="Green"/>
+            <Button Text="Limpiar" Background="Red"/>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
